@@ -10,6 +10,9 @@
 </head>
 
 <body>
+    <header>
+        <a href={{route('blog')}}>Blog</a>
+    </header>
 
     <h1>Hello World</h1>
     <h2>my name is {{ $name }}</h2>
