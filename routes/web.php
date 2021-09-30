@@ -17,7 +17,7 @@ Route::get('/', function () {
     $data = [
         'name' => 'Michau',
         'lastname' => 'Wado',
-        'links' => ['blog', 'info', 'projects']
+        'links' => ['home', 'blog', 'info', 'projects']
     ];
     return view('home', $data);
 })->name('home');
