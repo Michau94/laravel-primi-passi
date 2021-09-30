@@ -11,7 +11,10 @@
 
 <body>
     <header>
-        <a href={{route('blog')}}>Blog</a>
+        @foreach($links as $link)
+        <a href={{route($link)}}>{{ $link }}</a>
+        @endforeach
+
     </header>
 
     <h1>Hello World</h1>

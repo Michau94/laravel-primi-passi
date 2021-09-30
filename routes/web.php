@@ -16,7 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $data = [
         'name' => 'Michau',
-        'lastname' => 'Wado'
+        'lastname' => 'Wado',
+        'links' => ['blog', 'info', 'projects']
     ];
     return view('home', $data);
 })->name('home');
@@ -25,3 +26,11 @@ Route::get('/', function () {
 Route::get('/blog', function () {
     return view('blog');
 })->name('blog');
+
+Route::get('/info', function () {
+    return view('info');
+})->name('info');
+
+Route::get('/projects', function () {
+    return view('projects');
+})->name('projects');
