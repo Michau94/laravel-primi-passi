@@ -11,6 +11,8 @@
 
 <body>
     <header>
+
+
         @foreach($links as $link)
         <a href={{route($link)}}>{{ $link }}</a>
         @endforeach
