@@ -9,6 +9,11 @@
 </head>
 
 <body>
+    <header>
+        @foreach($links as $link)
+        <a href={{route($link)}}>{{ $link }}</a>
+        @endforeach
+    </header>
 
     <h1>Project 1</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsum praesentium quibusdam, eos soluta vel nulla in dicta, voluptatem, a at doloremque sunt necessitatibus distinctio! Libero placeat laboriosam dignissimos omnis.</p>

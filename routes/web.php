@@ -24,13 +24,23 @@ Route::get('/', function () {
 
 
 Route::get('/blog', function () {
-    return view('blog');
+    $data = [
+        'links' => ['home', 'blog', 'info', 'projects']
+    ];
+    return view('blog', $data);
 })->name('blog');
 
 Route::get('/info', function () {
-    return view('info');
+    $data = [
+
+        'links' => ['home', 'blog', 'info', 'projects']
+    ];
+    return view('info', $data);
 })->name('info');
 
 Route::get('/projects', function () {
-    return view('projects');
+    $data = [
+        'links' => ['home', 'blog', 'info', 'projects']
+    ];
+    return view('projects', $data);
 })->name('projects');

@@ -10,8 +10,13 @@
 </head>
 
 <body>
+    <header>
+        @foreach($links as $link)
+        <a href={{route($link)}}>{{ $link }}</a>
+        @endforeach
+    </header>
 
-    <a href={{route('home')}}>Home</a>
+
 
     <article>
         <h1>Blog Post</h1>
