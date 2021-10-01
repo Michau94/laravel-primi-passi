@@ -18,11 +18,16 @@
     </header>
 
     <h1>Hello World</h1>
-    @if(!$name)
-    <h2>I'm a Guest</h2>
-    @else
+    @isset($name)
     <h2>my name is {{ $name }}</h2>
-    @endif
+    @endisset
+
+    @empty($name)
+    
+    <h2>I'm a Guest</h2>
+        
+    @endempty
+
     <h3>and my lastname id {{ $lastname }}</h3>
 
 </body>
